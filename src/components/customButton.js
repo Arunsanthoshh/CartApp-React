@@ -4,7 +4,7 @@ import { DynamicProduct } from "./dynamicProduct";
 export function CustomButton(props) {
     const navigate = useNavigate();
     function buttonClick() {
-        navigate('/newProduct');
+        // navigate('/newProduct');
         <DynamicProduct />
     }
 

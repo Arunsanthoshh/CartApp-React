@@ -2,8 +2,6 @@ import { useEffect, useState } from "react"
 import axios from 'axios';
 import React from "react";
 import './products.css'
-import { DynamicProduct } from "./dynamicProduct";
-import { useNavigate } from "react-router-dom";
 import { CustomButton } from './customButton';
 
 const baseURL = 'https://dummyjson.com/products';
@@ -20,7 +18,6 @@ function closeClick(id) {
 
 export function Products() {
     let [productList, setProductList] = useState([]);
-    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get(baseURL).then((res) => {
